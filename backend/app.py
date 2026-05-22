@@ -26,7 +26,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # SSL requerido por Neon (ya viene en la URL con ?sslmode=require, pero esto lo refuerza)
 app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
     "pool_pre_ping": True,
-    "connect_args": {"sslmode": "require"},
 }
 
 CORS(app, origins="*", allow_headers=["Content-Type", "X-Token"])
