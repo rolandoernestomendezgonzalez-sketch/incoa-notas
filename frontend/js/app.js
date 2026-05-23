@@ -1,4 +1,4 @@
-const API = "https://TU-PROYECTO.vercel.app/api";
+const API = "https://incoa-notas.vercel.app/api";
 
 /* ── HTTP helpers ─────────────────────────────────────────── */
 async function http(method, path, body) {
